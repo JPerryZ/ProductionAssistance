@@ -40,7 +40,7 @@ h1,h2,h3{font-family:'Playfair Display',serif; line-height:1.2; margin:0 0 .5rem
 
 .hero__overlay{position:absolute; background-color:rgb(197, 212, 216)}
 .hero__content{position:relative; color:white; padding:2rem}
-.hero h1{font-style:italic;color: #8ebb34; font-size:  200px; margin-bottom:.5rem; 
+.hero h1{font-style:italic;color: #8ebb34; font-size:  150px; margin-bottom:.5rem; 
   text-shadow: 2px 2px #20202e;}
 .hero h2{font: size 1rem; color: black; text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 
   0 0 20px #d4f321, 0 0 35px #d4f321, 0 0 40px #d4f321, 0 0 50px #d4f321, 0 0 75px #d4f321;}
