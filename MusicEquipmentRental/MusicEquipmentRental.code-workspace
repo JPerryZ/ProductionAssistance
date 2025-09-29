@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../MusicEquipmentRental"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "MusicEquipmentRental",
+		"cSpell.words": [
+			"Backline"
+		]
+	}
+}
