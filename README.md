@@ -19,4 +19,4 @@ Open with Live Server or a static server. No build step.
 
 ## Deployment
 
-Connected via Netlify → New site from Git → select this repo.
+Connected via Netlify → New site from Git 
