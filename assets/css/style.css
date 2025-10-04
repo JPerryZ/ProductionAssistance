@@ -28,7 +28,6 @@
 
 html,
 body {
-  margin: 0;
   padding: 0;
   align-items: flex;
   scroll-behavior: smooth;
@@ -37,6 +36,8 @@ body {
 
 body,
 .main-text {
+  padding: 0;
+  margin: 0;
   background-color: rgb(12, 12, 12);
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: var(--font-base);
@@ -53,7 +54,6 @@ h1 {
   font-family: Cambria, Cochin, serif;
   font-size: var(--font-xlarge);
   line-height: 50px;
-  margin: 0 0 16px;
   text-shadow: black 0 0 20px;
   text-align: center;
 }
@@ -61,44 +61,38 @@ h2 {
   font-family: Cambria, Cochin, serif;
   font-size: var(--font-large);
   line-height: 40px;
-  margin: 0 0 12px;
   text-align: center;
 }
 h3 {
   font-family: Cambria, Cochin, serif;
   font-size: var(--font-medium);
   line-height: 28px;
-  margin: 0 0 8px;
   text-align: center;
 }
 p {
   font-size: var(--font-base);
   line-height: var(--line-height-base);
-  margin: 10px;
 }
 
 /* Containers */
 .container {
-  max-width: var(--container);
-  margin-bottom: 0 auto;
-  position: auto;
+  justify-content: center;
   align-items: center;
-}
-.container .section__cards {
-  max-width: var(--container);
-  position: relative;
-  display: flex;
+  align-content: center;
+  display: center;
   height: auto;
   width: 100%;
 }
-.container__CrowdPic {
-  max-width: var(--container);
-  position: relative;
-  display: flex;
-  height: 100%;
-  width: 100%;
+.container__cards {
+  padding-bottom: 20px;
 }
-
+.container__CrowdPic {
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
 /* Header & Navigation */
 .site-header {
   display: flex;
@@ -108,7 +102,7 @@ p {
 }
 
 .site-nav {
-  font-size: 20px;
+  font-size: 15px;
   justify-content: space-between;
   padding: 5px;
   display: flex;
@@ -164,35 +158,35 @@ p {
   font-style: italic;
   color: #7cf321;
   text-shadow: -2px -2px 0 #304ed3b3;
-  margin-bottom: 32px;
 }
 .hero h2 {
   color: #211994e9;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #d4f321,
     0 0 35px #d4f321, 0 0 40px #d4f321, 0 0 50px #d4f321, 0 0 75px #d4f321;
-  margin-bottom: 32px;
 }
 .hero p {
   max-width: 680px;
-  margin: 0 auto 16px;
 }
 
 /* Sections */
 .section {
+  padding: 0%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
-  display: flex;
   height: auto;
   width: 100%;
-  padding: 0;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  position: relative;
 }
+
 .section__cards {
   height: auto;
   width: 100%;
-  font-size: var(--font-large);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: center;
   color: #7cf321;
   text-shadow: #7cf321 0 0 20px;
   text-align: center;
@@ -210,37 +204,49 @@ p {
   color: var(--charcoal);
   text-shadow: #7cf321 0 0 20px;
   text-align: center;
-  display: flex;
+  display: center;
   justify-content: center;
+  align-items: flex;
 }
 .section--alt {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  justify-content: center;
+  align-items: center;
   height: auto;
   width: auto;
   background: white;
   color: rgb(10, 8, 58);
   font-size: 35px;
-  display: center;
+  display: flex;
   text-align: center;
   line-height: 40px;
 }
 .section--alt p {
+  text-align: center;
   font-family: Cambria, Cochin, serif;
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(255, 115, 0, 0.949);
+  padding: 0%;
 }
 .section--alt p2 {
   font-family: Cambria, Cochin, serif;
   color: rgb(247, 163, 5);
-  font-size: 10px;
+  font-size: 20px;
   text-align: center;
 }
 
 /* Cards */
+.cards {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+}
 .card {
   background: black;
   border: 1px solid #fff;
   border-radius: 8px;
-  padding: 5px;
+  padding: auto;
 }
 .card h3 {
   color: #7cf321;
@@ -252,10 +258,6 @@ p {
 /* Lists */
 details.services__all {
   align-items: center;
-  margin-top: 16px;
-}
-.list {
-  margin: 8px 0 0 16px;
 }
 
 /* Forms */
@@ -265,7 +267,6 @@ details.services__all {
 .field {
   display: flex;
   flex-direction: column;
-  margin-bottom: 16px;
 }
 input,
 textarea {
@@ -302,19 +303,16 @@ textarea {
   background: rgba(32, 30, 30, 1);
   text-align: center;
   font-size: var(--font-small);
-}
-.site-footer .skip-link {
-  background-color: black;
   color: #7cf321;
   text-align: center;
+  
 }
 .footer__grid {
-  display: grid;
+  display: center;
   color: #7cf321;
 }
 .social a {
   display: inline-block;
-  margin-right: 16px;
 }
 
 /* Misc */
@@ -353,11 +351,11 @@ textarea {
     min-height: 500px;
   }
   .cards {
-    justify-content: space-between;
+    height: auto;
+    width: auto;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
   }
   .section__title {
     font-size: 32px;
