@@ -236,11 +236,6 @@ p {
 }
 
 /* Cards */
-.cards {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 10px;
-}
 .card {
   background: black;
   border: 1px solid #fff;
